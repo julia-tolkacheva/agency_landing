@@ -7,6 +7,8 @@ body {
 	font-family: "Open Sans",sans-serif;
 }
 
+
+
 .total-margin {
 	width: 80%;
 	margin: 0 auto;
@@ -43,11 +45,11 @@ body {
 }
 .menu-item a {
 	color:white;
-   text-decoration: none;
-   text-align: center;
-   font-size: 14px;
-   font-weight: bold;
-   margin: 9px 0 0 0;
+   	text-decoration: none;
+   	text-align: center;
+   	font-size: 14px;
+   	font-weight: bold;
+   	margin: 9px 0 0 0;
 }
 .menu-item:hover {background: #ff2d2d} 
 
@@ -55,17 +57,17 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-top: 93px;
+	margin-top: 63px;
 }
 .firstfloor__text {
 	margin: 0 0;
 	display: inline-block;
-	width: 50%;
+	width: 55%;
 }
 .firstfloor__pic {
 	margin: 0 auto;
 	min-width: 500px;
- 	margin: 10px 0;
+ 	margin: 40px 0;
 	text-align: right;
 	box-shadow: 0px 0px 50px 5px #7F8891;
 }
@@ -74,13 +76,14 @@ body {
 	font-size: 60px;
 	font-weight: 800;
 	line-height: 72px;
-	margin: 0;
-
+	margin-top: 30px;
+	letter-spacing: 5px;
 }
 .firstfloor p {
 	margin: 15px 0;
 	font-size: 16px;
 	line-height: 28px;
+	width: 70%
 }
 .tab {
 	display: inline-block;
@@ -103,7 +106,7 @@ body {
 /* services style */
 
 .services{
-	margin: 67px auto;
+	margin: 67px auto 40px auto;
 	display: flex;
 	justify-content: space-between;
 
@@ -142,6 +145,7 @@ body {
 	width: 50%;
 	display: flex;
 	flex-wrap: wrap;
+	margin: 45px 0 0 0;
 }
 
 .hr-full{
@@ -158,21 +162,43 @@ body {
 
 .feature__text{
 	text-align: center;
+	margin-top: 94px;
 }
 .feature__text h2 {
 	font-size: 42px;
 	font-weight: bold;
+	margin-block-end: 0;
 }
+.feature__text p {
+	font-size: 16px;
+	font-weight: normal;
+	display: inline-block;
+	width: 43%;
+	text-align: center;
+	line-height: 28px;
+}
+
 .features > ul{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	list-style: none;
+	margin: 83px auto;
+	padding-inline-start: 0;
+	width: 70%;
 }
-.features > ul > li {
+.features > ul > li  {
 	margin: 0 10px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 22px;
+	font-weight: bold;
+}
+.features > ul > li > a {
+	text-decoration: none;
+	color: #000;
+}
+.features li:first-of-type a {
+	color: red;
 }
 
 .cards h3{
@@ -191,22 +217,19 @@ body {
 	width: 300px;
 	text-align: left;
 	padding: 0 0;
+	margin: 0 0 27px 0;
 }
 
 .products{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
 .product-box{
 	width: 298px;
 	height: 290px;
 	background-color: rgb(245,240,221);
-	margin: 10px auto;
-}
-
-.features li:first-of-type {
-	color: red;
+	margin: 10px 10px;
 }
 
 /* section our-team style */
@@ -237,13 +260,13 @@ body {
 .team-table {
 	display: flex;
 	justify-content: space-between;	
-	flex-wrap: wrap;
+	align-items: baseline;
 }
 
 .team-cards{
 	display: flex;
 	flex-wrap: wrap;
-	width: 60%;
+	width: 67%;
 	flex-direction: column;
 	justify-content: space-between;
 
@@ -251,8 +274,11 @@ body {
 
 .team-main-image{
 	width: 320px;
+	height: 458px;
 	background-color: rgb(245,240,221);
 	display: inline-block;
+	flex-shrink: 0;
+	margin-right: 70px;
 }
 .team-member {
 	display: inline-block;
@@ -275,17 +301,33 @@ body {
 
 .cards-members {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	width: 100%;
 }
-.people{
+.member{
 	display: inline-block;
 	width: 195px;
 	height: 210px;
 	background-color: rgb(245,240,221);
-	margin: 10px 10px 0px 10px;
+	margin: 10px 10px;
+	position: relative;
 }
+.member-name {
+	display: inline-block;
+	width: inherit;
+	height: 30px;
+	color: white;
+	padding-top: 7px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	background-color: #555555;
+	z-index: 1;
+	opacity: 0%;
+}
+.member:hover .member-name {opacity: 50%;}
 
 /* section email-subscribe */
 
@@ -304,6 +346,7 @@ body {
 	font-size: 42px;
 	font-weight: bold;
 	margin: 10px auto;
+	text-align: center;
 }
 .email-subscribe p {
 	font-size: 16px;
@@ -315,7 +358,8 @@ body {
 	height: 80px;
 	border-radius: 5px;
 	padding: 0 0 0 34px;
-	margin-top: 60px;
+	margin: 60px 23px 40px 0;
+
 	font-size: 16px;
 	font-weight: normal;
 }
@@ -328,8 +372,6 @@ body {
 	font-size: 18px;
 	font-weight: bold;
 	color: white;
-	margin-left: 23px;
-
 }
 
 /* section feedback */
@@ -344,6 +386,7 @@ body {
 }
 .user {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: stretch;
 }
@@ -418,4 +461,61 @@ footer .social-network {
 }
 footer img {
 	margin: 0 10px;
+}
+@media (max-width: 1410px){
+	.firstfloor {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.firstfloor__text {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1050px){
+	.team-table {
+		flex-wrap: wrap;
+	}
+	.team-cards {
+		width: 100%;
+	}
+}
+@media (max-width: 900px){
+	.features > ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	.feedback {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.info {
+		margin-top: 30px;
+		width: 100%;
+	}
+	.input-box {
+		width: 100%;
+	}
+	.user form {
+		min-height: 600px;
+		width: 100%
+	}
+	.email-subscribe {
+		align-items: flex-start;
+	}
+	.email-subscribe form {
+		margin-left: 10%;
+	}
+	.email-subscribe input {
+		width: 80%;
+	}
+	.email-subscribe button {
+		width: 50%;
+	}
+}
+
+@media (max-width: 600px){
+	body {
+		width: 600px;
+	}
 }
